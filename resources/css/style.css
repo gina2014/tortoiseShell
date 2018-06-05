@@ -1,0 +1,21 @@
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.site-container {
+  width: 960px;
+  margin: 0px auto;
+}
+
+.topSection {
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.header {
+  
+}
