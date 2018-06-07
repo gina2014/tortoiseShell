@@ -3,6 +3,18 @@ html {
   line-height: 1.4;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.font-family {
+  font-family: Helvetica Verdana sans-serif;
+}
+
+.cadetBlueBG {
+  background-color: cadetblue;
+}
+
 .site-container {
   width: 960px;
   margin: 0px auto;
@@ -14,8 +26,282 @@ html {
   background-position: center;
   background-size: cover;
   height: 30rem;
+  display: flex;
 }
 
 .header {
-  
+  display: flex;
+  color: white;
+  align-items: center;
+  top: 1rem;
+  position: relative;
+  /*margin-bottom: 10rem;*/
+}
+
+.header img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.header span {
+  font-size: 1rem;
+}
+
+.nav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0px auto;
+}
+
+.nav span a{
+  text-decoration: none;
+  color: white;
+  padding-right: 2rem;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10rem;
+/*  top: 10rem;
+  position: relative;*/
+}
+
+.banner span{
+  line-height: 1.2;
+  font-size: 2rem;
+  margin-right: -2rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.companyObjectives .site-container{
+  display: flex;
+  justify-content: center;
+  /*padding-left: 3rem;*/
+}
+
+.objective {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 8rem;
+  top: 3rem;
+  position: relative;
+  width: 5rem;
+  /*padding-right: 5rem;*/
+  margin: 0px 3rem;
+}
+
+.objectiveImage {
+  display: flex;
+  align-items: center;
+}
+
+.objectiveImage .paper {
+  width: 3.5rem;
+  /*padding-right: 6rem;*/
+}
+
+.objectiveImage .ruler, .truck {
+  width: 5rem;
+  /*padding-right: 6rem;*/
+}
+
+.objectiveHeader {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.objectiveHeader span {
+  padding-top: 0.25rem;
+}
+.CompanyInfo .site-container{
+  display: flex;
+  margin: 3rem auto;
+  /*padding-right: 4rem;*/
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.philosophy {
+  top: 3rem;
+  position: relative;
+  width: 35%;
+  /*padding-right: 1rem;*/
+}
+
+.appointments {
+  top: 3rem;
+  position: relative;
+  width: 35%;
+  margin-left: 5%;
+  /*padding-left: 1rem;*/
+}
+
+.infoHeader {
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  width: 10rem;
+  text-transform: uppercase;
+}
+
+.infoHeader h2 {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.infoParagraph {
+  width: 90%;
+  padding-top: 1rem;
+}
+
+.footer .site-container{
+  background-color: azure;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  padding-left: 6rem;
+  justify-content: flex-start;
+}
+
+.footer .site-container img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .header {
+    top: 0rem;
+  }
+  .banner{
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+    margin-top: 5rem;
+  }
+
+  .banner span {
+    font-size: 1.33rem;
+  }
+  .topSection {
+    height: 22rem;
+  }
+
+}
+
+@media only screen and (max-width: 560px) {
+
+  .header .logo{
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0px auto;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 1rem;
+  }
+
+  .mobile-nav span a {
+    text-decoration: none;
+    color: white;
+    padding-right: 2rem;
+  }
+
+  .topSection {
+    height: 17rem;
+    background-position: 20%;
+    padding-bottom: 1.5rem;
+  }
+
+  .banner{
+    padding: 0rem 0rem;
+    margin: 9rem auto 1rem auto;
+  }
+
+  .banner span {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .companyObjectives .site-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .objectiveHeader {
+      padding-bottom: 1.54rem;
+    }
+
+  .objectiveHeader span {
+    font-size: 0.77rem;
+
+  }
+
+  .objective {
+    top: 3.77rem;
+  }
+
+  .CompanyInfo .site-container{
+    display: flex;
+    margin: 3rem auto;
+    /*padding-right: 4rem;*/
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .philosophy{
+    width: 100%;
+  }
+
+  .appointments {
+    width: 100%;
+    margin: 0.77rem;
+  }
+
+  .infoHeader {
+    width: 100%;
+    text-align: center;
+  }
+
+  .infoParagraph {
+    font-size: 0.77rem;
+    width: 90%;
+    padding-bottom: 4rem;
+  }
+
+  .footer .site-container{
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 1rem;
+  }
+
+  .footer span {
+    display: none;
+  }
+
 }
